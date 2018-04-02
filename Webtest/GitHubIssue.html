@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>GitHubIssue</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CreateIssueTest</td></tr>
+</thead>
+<tbody>
+<tr><td>click</td><td>//div[@id='js-repo-pjax-container']/div/nav/span[2]/a/span<datalist><option>//div[@id='js-repo-pjax-container']/div/nav/span[2]/a/span</option><option>//span[2]/a/span</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//a[contains(text(),'New issue')])[2]<datalist><option>xpath=(//a[contains(text(),'New issue')])[2]</option><option>//div[@id='js-repo-pjax-container']/div[2]/div/div/div[2]/a</option><option>xpath=(//a[contains(@href, '/Taeir2/test-repo/issues/new')])[2]</option><option>//div[2]/a</option><option>css=a.btn.btn-primary.float-right</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=issue_title<datalist><option>id=issue_title</option><option>name=issue[title]</option><option>//input[@id='issue_title']</option><option>//form[@id='new_issue']/div/div/div/div/div/input</option><option>//form/div/div/div/div/div/input</option><option>css=#issue_title</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=issue_title<datalist><option>id=issue_title</option><option>name=issue[title]</option><option>//input[@id='issue_title']</option><option>//form[@id='new_issue']/div/div/div/div/div/input</option><option>//form/div/div/div/div/div/input</option><option>css=#issue_title</option></datalist></td><td>Title</td>
+</tr>
+<tr><td>click</td><td>id=issue_body<datalist><option>id=issue_body</option><option>name=issue[body]</option><option>//textarea[@id='issue_body']</option><option>//form[@id='new_issue']/div/div/div/div/div[2]/div[3]/textarea</option><option>//textarea</option><option>css=#issue_body</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=issue_body<datalist><option>id=issue_body</option><option>name=issue[body]</option><option>//textarea[@id='issue_body']</option><option>//form[@id='new_issue']/div/div/div/div/div[2]/div[3]/textarea</option><option>//textarea</option><option>css=#issue_body</option></datalist></td><td>Content</td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='button'])[26]<datalist><option>xpath=(//button[@type='button'])[26]</option><option>//form[@id='new_issue']/div/div[2]/div[2]/div/div/div/button</option><option>//div[2]/div[2]/div/div/div/button</option><option>css=div.select-menu.js-menu-container.js-select-menu.label-select-menu &gt; button.discussion-sidebar-heading.discussion-sidebar-toggle.js-menu-target</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//form[@id='new_issue']/div/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div<datalist><option>//form[@id='new_issue']/div/div[2]/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div</option><option>//div[2]/div/div/div[2]/div</option><option>css=div.css-truncate.labelstyle-ee0701</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='js-repo-pjax-container']/div[2]/div[2]<datalist><option>//div[@id='js-repo-pjax-container']/div[2]/div[2]</option><option>//div[4]/div/div/div[2]/div[2]</option><option>css=div.modal-backdrop.js-touch-events</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@name='issue[user_assignee_ids][]']<datalist><option>//button[@name='issue[user_assignee_ids][]']</option><option>//form[@id='new_issue']/div/div[2]/div/div/span/button</option><option>//div/span/button</option><option>css=button[name="issue[user_assignee_ids][]"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(//button[@type='submit'])[5]<datalist><option>xpath=(//button[@type='submit'])[5]</option><option>//form[@id='new_issue']/div/div/div/div/div[3]/button</option><option>//div/div[3]/button</option><option>css=button.btn.btn-primary</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='partial-discussion-header']/div/h1/span<datalist><option>//div[@id='partial-discussion-header']/div/h1/span</option><option>//div[2]/div/div/div/div/div/h1/span</option><option>css=span.js-issue-title</option></datalist></td><td>Title</td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='discussion_bucket']/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td/p<datalist><option>//div[@id='discussion_bucket']/div[2]/div/div/div[2]/div/div[2]/table/tbody/tr/td/p</option><option>//td/p</option><option>css=td.d-block.comment-body.markdown-body.js-comment-body &gt; p</option></datalist></td><td>Content</td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='partial-discussion-sidebar']/div[2]/div/div/a/span<datalist><option>//div[@id='partial-discussion-sidebar']/div[2]/div/div/a/span</option><option>//div[2]/div/div/a/span</option><option>css=a.sidebar-labels-style.box-shadow-none.width-full.d-block.IssueLabel.v-align-text-top.labelstyle-ee0701.linked-labelstyle-ee0701 &gt; span.css-truncate-target</option></datalist></td><td>bug</td>
+</tr>
+</tbody></table>
+</body>
+</html>
